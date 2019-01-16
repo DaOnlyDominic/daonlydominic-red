@@ -23,12 +23,4 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content.startsWith('RED.dm ') && message.mentions.users.size) {
-        var v=message.toString().split(' ').shift().shift().join(' ')
-        var member=message.mentions.users[0]
-        member.send(v)
-    }
-})
-
 client.login(process.env.BOT_TOKEN);
