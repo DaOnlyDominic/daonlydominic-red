@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    	message.reply('PONG!');
   	}
 });
 
@@ -18,9 +18,23 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === 'ching') {
+    	message.reply('CHONG!');
   	}
 });
-
+client.on('message', message=> {
+    if (message.content === 'Big') {
+        message.reply('Chungus')
+    }
+});
+client.on('message', message=> {
+    if (message.content === 'School') {
+        message.reply('Sucks')
+    }
+});
+client.on('message', message=> {
+    if (message.content === 'Shaggy') {
+        message.reply('Is better than Thanos.')
+    }
+});
 client.login(process.env.BOT_TOKEN);
